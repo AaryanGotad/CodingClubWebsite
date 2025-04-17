@@ -192,7 +192,7 @@ header img {
     left: 10px;
     top: 20%;
     transform: translateY(-50%);
-    height: 300px;
+    height: 60%;
     width: auto;
     transition: all 0.3s ease;
 }
