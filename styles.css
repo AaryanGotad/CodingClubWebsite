@@ -1,0 +1,295 @@
+body {
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    z-index: 100;
+}
+
+.container {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 95%;
+    max-width: 1100px;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-around;
+    /* Changed from center to space-evenly */
+    gap: 10px;
+    margin-top: 20px;
+    padding: 15px 30px;
+    /* Added padding */
+    z-index: 1000;
+    /* Increased z-index */
+    background: linear-gradient(to right,
+            rgba(10, 10, 10, 0.8),
+            rgba(10, 10, 10, 0.8));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.35);
+}
+
+.radio-wrapper {
+    position: relative;
+    height: 55px;
+    width:fit-content;
+    min-width: 90px;
+    margin: 0 5px;
+}
+
+/* Make the "Contributors" button wider */
+.radio-wrapper:last-child {
+    min-width: 130px;
+    /* Specific width for Contributors */
+}
+
+.btn {
+    font-size: 15px;
+    position: relative;
+    font-weight: 900;
+    width: auto;
+    padding: 10px;
+    height: 100%;
+    line-height: 38px;
+    text-align: center;
+}
+
+.btn a {
+    text-decoration: none;
+    white-space: nowrap;
+    display: block;
+    font-family: sans-serif;
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to right, #23abd4, #23abd4 50%, #fff 50%);
+    background-size: 200% 100%;
+    background-position: -100%;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    text-shadow: 0 0 3px white, 0 0 7px white, 0 0 17px white, 0 0 27px white, 0 0 37px white, 0 0 47px white;
+}
+
+.btn a::before {
+    display: none;
+    /* Disable the underline effect */
+}
+
+/* Disable the hover effect */
+.btn a:hover {
+    background-position: -100%;
+    /* Keep the gradient in its original position */
+    text-shadow: 5px;
+    text-decoration: underline;
+    /* Remove text shadow on hover */
+}
+
+.btn a:hover::before {
+    width: 0;
+    /* Ensure the underline doesn't appear on hover */
+}
+
+.section {
+    background: rgba(10, 10, 10, 0.75); /* 0.5 opacity */
+    
+    /* Glass effect properties */
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(10px);
+    
+    /* Border and shadow */
+    
+    border: 1px solid rgba(255, 255, 255, 0.2); /* subtle white border */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6), 
+                0 6px 20px rgba(0, 0, 0, 0.6);
+    
+    /* Ensure content is above the blur */
+    position: relative;
+    border-radius: 12px;
+    
+    margin-top: 1%;
+    padding: 1.5rem;
+    width: 100%;
+    max-width: 500px;
+    transition:  0.3s ease;
+}
+
+.section:hover {
+    transform: translate3d(0, 5px, 5px);
+    
+}
+
+.text {
+    font-family:sans-serif;
+    font-size: 30px;
+
+    text-shadow: 2px 2px 4px rgba(10, 10, 10, 0.8);
+    color: #b3d6ed;
+
+    padding-left: 20px;
+    padding-top: 1px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+}
+
+.section-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 2rem;
+    margin-bottom: 3rem;
+    margin-top: 2%;
+}
+
+.heading {
+    margin-top: 3%;
+    font-weight: bolder;
+    text-decoration: underline;
+    color: #bfc9ca;
+}
+
+#section-content {
+    margin-top: 2px;
+    text-decoration: none;
+    font-style: italic;
+}
+
+.sum-content {
+    margin-top: 2px;
+    text-decoration: none;
+    font-style: italic;
+}
+
+header {    
+    position: relative;
+    text-align: center;
+
+    background-color: #17202a;
+    width: 100%;
+    padding: 2% 0;
+    margin-bottom: 1%;
+    left: 0;
+    right: 0;    
+
+    background-size: cover;
+
+    border-bottom: #fff;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.35);
+}
+
+header img {
+    position: absolute;
+    left: 20px;
+    top: 25%;
+    transform: translateY(-50%);
+    height: 100%;
+    width: auto;
+    transition: all 0.3s ease;
+}
+
+header img:hover {
+    cursor: pointer;
+    filter: drop-shadow(0 0 2px white)
+            drop-shadow(0 0 8px white)
+            drop-shadow(0 0 12px white);    
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background: #17202a;
+    color: white;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.35);
+}
+
+.title {
+    font-size: 45pt;
+    font-weight: bolder;
+    text-decoration: underline;
+    color: whitesmoke;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    margin-top: 7%;
+    margin-bottom: 0;
+    padding-left: 80px;
+}
+
+.content {
+    font-size: 25pt;
+    font-weight: bold;
+    color: #d5d8dc;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.events-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 2rem;
+    margin-bottom: 3rem;
+    margin-top: 5%;   
+}
+
+.event {
+    background: rgba(21, 67, 96, 0.75);; /* 0.5 opacity */
+    
+    /* Glass effect properties */
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(10px);
+    
+    /* Border and shadow */
+    
+    border: 1px solid rgba(255, 255, 255, 0.2); /* subtle white border */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6), 
+                0 6px 20px rgba(0, 0, 0, 0.6);
+    
+    /* Ensure content is above the blur */
+    position: relative;
+    border-radius: 12px;
+    
+    padding: 1.5rem;
+    width: 100%;
+    max-width: 500px;
+    transition:  0.3s ease;
+}
+
+.video-lectures {
+    background: linear-gradient(135deg, rgba(111, 21, 229, 0.7), rgba(179, 86, 157, 0.9));
+
+    /* Glass effect properties */
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(10px);
+    
+    /* Border and shadow */
+    
+    border: 1px solid rgba(255, 255, 255, 0.2); /* subtle white border */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6), 
+                0 6px 20px rgba(0, 0, 0, 0.6);
+    
+    /* Ensure content is above the blur */
+    position: relative;
+    border-radius: 12px;
+    
+    margin-top: 2%;
+    padding: 0 2rem;
+    width: 100%;
+    max-width: 500px;
+    transition:  0.3s ease;
+
+    margin-bottom: 3rem;
+    margin-left: 5%;
+    display: flex;
+    flex-wrap: wrap;
+}

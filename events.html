@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <img src="logo.png" alt="Logo" class="clickable-logo">
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const logo = document.querySelector('.clickable-logo');
+
+                if(logo) {
+                    logo.addEventListener('click', function() {
+                        window.location.href = 'index.html'
+                    });
+                }
+            });
+        </script>
+
+        <h1 class="title">
+            All Conducted Events
+        </h1>
+    </header>
+
+    <!-- navigation bar -->
+    <div class="container" id="nav-menu">
+        <div class="radio-wrapper">
+            <div class="btn">
+                <a id="aid" class="nav-link" href="index.html">Home</a>
+            </div>
+        </div>
+
+        <div class="radio-wrapper">
+            <div class="btn">
+                <a id="aid" class="nav-link" href="about.html">About</a>
+            </div>
+        </div>
+
+        <div class="radio-wrapper">
+            <div class="btn">
+                <a id="aid" class="nav-link" href="events.html">Events</a>
+            </div>
+        </div>
+
+        <div class="radio-wrapper">
+            <div class="btn">
+                <a id="aid" class="nav-link" href="testimonials.html">Testimonials</a>
+            </div>
+        </div>
+
+        <div class="radio-wrapper">
+            <div class="btn">
+                <a class="nav-link" href="resources.html">Resources</a>
+            </div>
+        </div>
+
+        <div class="radio-wrapper">
+            <div class="btn">
+                <a id="aid" class="nav-link" href="contact.html">Contact Us</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="events-container">
+        <div class="event">
+            <div class = "text">
+                <h2 class="heading">Kickstart Web Development Workshop 2025</h2>
+                <ul>
+                    <li>Kickstart Web Development Workshop was held from Aprli 13th to Aprli !7th, 2025</li>
+                </ul>
+                <p class="sum-content">
+                    (All events would have their separate blocks)
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Indian Institute of Technology Guwahati Online Degree Program Coding Club. All rights reserved.</p>
+    </footer>
+</body>
+</html>

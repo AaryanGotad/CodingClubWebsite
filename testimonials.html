@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials</title>
+    <link rel = "stylesheet" href = "styles.css">
+    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body style="background: linear-gradient(135deg, #5528a0, #c166a0);">
+    
+    <div class="container" id="nav-menu">
+        <div class="radio-wrapper">
+            <div class="btn">
+                <a id="aid" class="nav-link" href="index.html">Home</a>
+            </div>
+        </div>
+
+        <div class="radio-wrapper">
+            <div class="btn">
+                <a id="aid" class="nav-link" href="about.html">About</a>
+            </div>
+        </div>
+
+        <div class="radio-wrapper">
+            <div class="btn">
+                <a id="aid" class="nav-link" href="events.html">Events</a>
+            </div>
+        </div>
+
+        <div class="radio-wrapper" style="min-width: 150px;">
+            <div class="btn">
+                <a id="aid" class="nav-link" href="testimonials.html">Testimonials</a>
+            </div>
+        </div>
+
+        <div class="radio-wrapper">
+            <div class="btn">
+                <a class="nav-link" href="resources.html">Resources</a>
+            </div>
+        </div>
+
+        <div class="radio-wrapper">
+            <div class="btn">
+                <a id="aid" class="nav-link" href="contact.html">Contact Us</a>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <img src="logo.png" alt="Logo" class="clickable-logo">
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const logo = document.querySelector('.clickable-logo');
+
+                if(logo) {
+                    logo.addEventListener('click', function() {
+                        window.location.href = 'index.html'
+                    });
+                }
+            });
+        </script>
+
+        <h1 class = "title">Coding Club Testimonials</h1>
+        <p class="content">Hear what our members have to say</p>
+    </header>
+
+    <main>
+        <section class="testimonials-container">
+            <!-- Testimonials will be added here by JavaScript -->
+        </section>
+
+        <section class="add-testimonial">
+            <h2>Share Your Experience</h2>
+            <form id="testimonial-form">
+                <div class="form-group">
+                    <input type="text" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="role" placeholder="Your Role (e.g., Member, Mentor)">
+                </div>
+                <div class="form-group">
+                    <textarea id="message" placeholder="Your testimonial" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="rating">Rating:</label>
+                    <div class="stars">
+                        <i class="far fa-star" data-rating="1"></i>
+                        <i class="far fa-star" data-rating="2"></i>
+                        <i class="far fa-star" data-rating="3"></i>
+                        <i class="far fa-star" data-rating="4"></i>
+                        <i class="far fa-star" data-rating="5"></i>
+                    </div>
+                    <input type="hidden" id="rating" value="0">
+                </div>
+                <button type="submit">Submit Testimonial</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Indian Institute of Technology Guwahati Online Degree Program Coding Club. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <img src="logo.png" alt="Logo" class="clickable-logo">
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const logo = document.querySelector('.clickable-logo');
+
+                if(logo) {
+                    logo.addEventListener('click', function() {
+                        window.location.href = 'index.html'
+                    });
+                }
+            });
+        </script>
+
+        <h1 class="title">
+            About IIT Guwahati's ODP Coding Club
+        </h1>
+    </header>
+
+    <!-- navigation bar -->
+    <div class="container" id="nav-menu">
+        <div class="radio-wrapper">
+            <div class="btn">
+                <a id="aid" class="nav-link" href="index.html">Home</a>
+            </div>
+        </div>
+
+        <div class="radio-wrapper">
+            <div class="btn">
+                <a id="aid" class="nav-link" href="about.html">About</a>
+            </div>
+        </div>
+
+        <div class="radio-wrapper">
+            <div class="btn">
+                <a id="aid" class="nav-link" href="events.html">Events</a>
+            </div>
+        </div>
+
+        <div class="radio-wrapper">
+            <div class="btn">
+                <a id="aid" class="nav-link" href="testimonials.html">Testimonials</a>
+            </div>
+        </div>
+
+        <div class="radio-wrapper">
+            <div class="btn">
+                <a class="nav-link" href="resources.html">Resources</a>
+            </div>
+        </div>
+
+        <div class="radio-wrapper">
+            <div class="btn">
+                <a id="aid" class="nav-link" href="contact.html">Contact Us</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-container">
+        <div class="event" style="width: 100%; max-width: 1200px;">
+            <div class = "text">
+                <p class="sum-content">
+                    ODP or the Online Degree Program Clubs at IIT Guwahati, is a student-driven initiative officially commenced on the 5th of March, 2025, in response to the enthusiastic interest shown by the students of the Online BSc. (Hons.) in Data Science & Artificial Intelligence Program.
+                </p>
+                <p class="sum-content">
+                    Recognizing the need for structured platforms that foster extracurricular and co-curricular engagement, IITG officially approved different clubs to enrich the learning experience beyond academics for the students of this degree program.
+                </p>
+                <p class="sum-content">
+                    These clubs aim to create avenues for teamwork, creativity and networking among online degree students, encouraging meaningful connections, knowledge sharing and a dynamic learning environment.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Indian Institute of Technology Guwahati Online Degree Program Coding Club. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

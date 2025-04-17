@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Club ODP IITG</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <img src="logo.png" alt="Logo" class="clickable-logo">
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const logo = document.querySelector('.clickable-logo');
+
+                if(logo) {
+                    logo.addEventListener('click', function() {
+                        window.location.href = 'index.html'
+                    });
+                }
+            });
+        </script>
+        <h1 class="title">
+            Recents
+        </h1>
+    </header>
+
+    <!-- navigation bar -->
+    <div class="container" id="nav-menu">
+        <div class="radio-wrapper">
+            <div class="btn">
+                <a id="aid" class="nav-link" href="index.html">Home</a>
+            </div>
+        </div>
+
+        <div class="radio-wrapper">
+            <div class="btn">
+                <a id="aid" class="nav-link" href="about.html">About</a>
+            </div>
+        </div>
+
+        <div class="radio-wrapper">
+            <div class="btn">
+                <a id="aid" class="nav-link" href="events.html">Events</a>
+            </div>
+        </div>
+
+        <div class="radio-wrapper">
+            <div class="btn">
+                <a id="aid" class="nav-link" href="testimonials.html">Testimonials</a>
+            </div>
+        </div>
+
+        <div class="radio-wrapper">
+            <div class="btn">
+                <a class="nav-link" href="resources.html">Resources</a>
+            </div>
+        </div>
+
+        <div class="radio-wrapper">
+            <div class="btn">
+                <a class="nav-link" href="contact.html">Contact Us</a>
+            </div>
+        </div>
+    </div>
+
+    <div class = "section-container">
+        <div class = "section">
+            <div class = "text">
+                <h2 class = "heading">Events:</h2>
+                <p class="sum-content">
+                    <ul>
+                        <li>
+                            Kickstart Web Development Workshop was held from Aprli 13th to Aprli !7th, 2025
+                        </li>
+                    </ul>
+                    <a href="events.html" target="_blank" style="color: #a9cce3; font-size: 15pt; font-style: normal; font-weight: light;">Know More</a>
+                </p>
+            </div>
+        </div>
+
+        <div class = "section">
+            <div class = "text">
+                <h2 class="heading">Testimonials</h2>
+                <p id = "section-content">
+                </p>
+            </div>
+        </div>
+
+        <div class = "section">
+            <div class = "text">
+                <h2 class="heading">About ODP Coding Club</h2>
+                <p class="sum-content">
+                    (Text regarding the whereabouts of the coding club will go here)
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Indian Institute of Technology Guwahati Online Degree Program Coding Club. All rights reserved.</p>
+    </footer>
+
+    <script src="home-testimonials.js"></script>
+</body>
+
+</html>
