@@ -176,7 +176,7 @@ header {
 
     background-color: #17202a;
     width: 100%;
-    padding: 15% 0 5% 0;
+    padding: 1% 0 5% 0;
     margin-bottom: 1%;
     left: 0;
     right: 0;    
@@ -190,9 +190,9 @@ header {
 header img {
     position: absolute;
     left: 10px;
-    top: 50%;
+    top: 20%;
     transform: translateY(-50%);
-    height: 60px;
+    height: 300px;
     width: auto;
     transition: all 0.3s ease;
 }
@@ -219,7 +219,7 @@ footer {
     color: whitesmoke;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
-    margin-top: 15%;
+    margin-top: 10%;
     margin-bottom: 0;
     padding-left: 70px;
 }
