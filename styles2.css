@@ -35,9 +35,10 @@ body {
     border-radius: 12px;
     position: relative;
 
+    margin: 10px auto;    
     padding: 1.5rem;
-    width: 100%;
-    max-width: 350px;
+    width: 95%;
+    max-width: 95%;
     transition: transform 0.3s ease;
 }
 
@@ -51,7 +52,7 @@ body {
     position: relative;
 
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 25px;
+    font-size: 16px;
     text-shadow: 2px 2px 4px rgba(10, 10, 10, 0.8);
     color: #a9cce3;
 
@@ -124,8 +125,9 @@ body {
     border-radius: 12px;
     position: relative;
     padding: 2rem;
-    margin: 0 auto 3rem;
-    max-width: 600px;
+    margin: 10px auto 3rem;
+    width: 95%;
+    max-width: 95%;
 }
 
 .add-testimonial h2 {
@@ -207,5 +209,27 @@ footer {
     
     header h1 {
         font-size: 2rem;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .testimonial-card {
+        max-width: 80%;
+    }
+    
+    .add-testimonial {
+        max-width: 80%;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .testimonial-card {
+        max-width: 350px;
+    }
+    
+    .add-testimonial {
+        max-width: 600px;
     }
 }
