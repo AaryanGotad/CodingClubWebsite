@@ -2,17 +2,14 @@
 🚀 IITG ODP Coding Club Website
 A modern, responsive website for IIT Guwahati's Online Degree Program (ODP) Coding Club
 
-MIT License
-Tech Stack
-Live Demo
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+![Tech Stack](https://img.shields.io/badge/Tech%20Stack-HTML%20%7C%20CSS%20%7C%20JavaScript-blueviolet)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Click%20Here-brightgreen)](https://aaryangotad.github.io/CodingClubWebsite/)
 
 🌟 About the Project
 This website serves as the final project for the Kickstart Web Development Workshop (April 2025) organized by the ODP Coding Club, IIT Guwahati. It’s designed to:
-
 Showcase club activities, events, and resources
-
 Provide a platform for testimonials and member engagement
-
 Offer a sleek, interactive UI with glassmorphism effects and smooth animations
 
 ✨ Key Features
@@ -33,15 +30,15 @@ Data Persistence: localStorage for testimonials
 Clone the repo:
 
 bash
-git clone https://github.com/aaryangotad/CodingClubWebsite.git
+```git clone [https://github.com/aaryangotad/CodingClubWebsite.git](https://github.com/aaryangotad/CodingClubWebsite.git)```
+
 Open in browser:
 
 Simply open index.html in any modern browser (Chrome/Firefox/Edge)
-
 No server or dependencies required!
 
 Or visit the live demo:
-👉 https://aaryangotad.github.io/CodingClubWebsite/
+👉 [Live Demo](https://aaryangotad.github.io/CodingClubWebsite/)
 
 📂 Project Structure
 CodingClubWebsite/
@@ -55,24 +52,27 @@ CodingClubWebsite/
 ├── styles2.css          # Testimonials-specific styles
 ├── script.js            # Testimonial submission logic
 └── home-testimonials.js # Displays latest testimonial on homepage
+
 🎨 UI Highlights
 Glassmorphism Cards:
 
 css
-background: rgba(21, 67, 96, 0.75);
-backdrop-filter: blur(20px);
+```background: rgba(21, 67, 96, 0.75);```
+```backdrop-filter: blur(20px);```
+
 Star-Rating System:
 Star Rating
 
 Mobile-Optimized Navbar:
 
 css
-@media (max-width: 768px) { ... }
+```@media (max-width: 768px) { ... }```
+
 📜 License
 This project is licensed under the MIT License. See LICENSE for details.
 
 🙌 Credits
 Developed by Aaryan Gotad as part of the IITG ODP Coding Club Web Dev Workshop.
 
-🚀 Explore Now!
-Live Demo Button
+🚀 Explore Now![
+Live Demo Button](https://aaryangotad.github.io/CodingClubWebsite/)
