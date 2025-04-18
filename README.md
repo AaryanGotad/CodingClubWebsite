@@ -30,7 +30,8 @@ Data Persistence: localStorage for testimonials
 Clone the repo:
 
 bash
-```git clone [https://github.com/aaryangotad/CodingClubWebsite.git](https://github.com/aaryangotad/CodingClubWebsite.git)```
+
+```git clone (https://github.com/aaryangotad/CodingClubWebsite.git)```
 
 Open in browser:
 
@@ -57,6 +58,7 @@ CodingClubWebsite/
 Glassmorphism Cards:
 
 css
+
 ```background: rgba(21, 67, 96, 0.75);```
 ```backdrop-filter: blur(20px);```
 
@@ -66,6 +68,7 @@ Star Rating
 Mobile-Optimized Navbar:
 
 css
+
 ```@media (max-width: 768px) { ... }```
 
 📜 License
