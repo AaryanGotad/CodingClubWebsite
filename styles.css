@@ -1,3 +1,4 @@
+/* styles for the body */
 body {
     background: linear-gradient(135deg, #6e8efb, #a777e3);
     background-size: cover;
@@ -7,8 +8,10 @@ body {
     z-index: 100;
 }
 
-/* Update container styles */
+/* container styles */
 .container {
+    
+    /* postion of the nav bar */
     display: flex;
     position: fixed;
     top: 0;
@@ -17,12 +20,15 @@ body {
     transform: none;
     width: 100%;
     max-width: 100%;
+
     flex-wrap: wrap;
     justify-content: center;
     gap: 5px;
     margin-top: 0;
     padding: 10px;
     z-index: 1000;
+
+    /* For the 'frosty glass' like effect (or simply 'glassmorphism') on the navigation bar */
     background: linear-gradient(to right, rgba(10, 10, 10, 0.8), rgba(10, 10, 10, 0.8));
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
@@ -31,7 +37,7 @@ body {
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.35);
 }
 
-/* Update radio-wrapper styles */
+/* Updated radio-wrapper styles */
 .radio-wrapper {
     position: relative;
     height: 40px;
@@ -40,12 +46,12 @@ body {
     margin: 0 2px;
 }
 
-/* Make the "Contributors" button wider */
+/* Made the last button wider */
 .radio-wrapper:last-child {
     min-width: 130px;
-    /* Specific width for Contributors */
 }
 
+/* styling for the navigation buttons on the navigation bar */
 .btn {
     font-size: 15px;
     position: relative;
@@ -57,6 +63,7 @@ body {
     text-align: center;
 }
 
+/* styling the text on the button */
 .btn a {
     text-decoration: none;
     white-space: nowrap;
@@ -77,48 +84,48 @@ body {
     transition: all 0.3s ease-in-out;
 }
 
+/* making each button glow when mouse pointer is being hovered on it or it is been tapped on on a touch screen */
 .nav-link:hover {
     text-shadow: 0 0 3px white, 0 0 7px white, 0 0 17px white, 0 0 27px white, 0 0 37px white, 0 0 47px white;
 }
 
+/* Disabling the underline effect of hyperlinks in the button */
 .btn a::before {
     display: none;
-    /* Disable the underline effect */
 }
 
-/* Disable the hover effect */
 .btn a:hover {
-    background-position: -100%;
     /* Keep the gradient in its original position */
-    text-shadow: 5px;
+    background-position: -100%;
+
+    /* underlying the text and adding a depth shadown for it when a mouse pointer is being hovered on it
+    or it is tapped on incase of touch screens */
     text-decoration: underline;
-    /* Remove text shadow on hover */
+    text-shadow: 5px;
 }
 
 .btn a:hover::before {
     width: 0;
-    /* Ensure the underline doesn't appear on hover */
 }
 
+/* styling the information tiles */
 .section {
-    background: rgba(10, 10, 10, 0.75); /* 0.5 opacity */
+    background: rgba(10, 10, 10, 0.75); /* a background with 75% opacity for the glass effect to appear */
     
     /* Glass effect properties */
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(10px);
     
-    /* Border and shadow */
-    
+    /* Border and shadow */    
     border: 1px solid rgba(255, 255, 255, 0.2); /* subtle white border */
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6), 
                 0 6px 20px rgba(0, 0, 0, 0.6);
     
-    /* Ensure content is above the blur */
+    /* Ensuring content is above the blur */
     position: relative;
-    border-radius: 12px;
-    
-    margin: 10px auto;
 
+    border-radius: 12px;
+    margin: 10px auto;
     margin-top: 1%;
     padding: 1rem;
     width: 95%;
@@ -126,21 +133,26 @@ body {
     transition:  0.3s ease;
 }
 
+/* making the individual section tiles pop out a bit when hovered on */
 .section:hover {
     transform: translate3d(0, 5px, 5px);
-    
 }
 
+/* styling for the content inside each section tiles */
 .text {
+    /* font related styles */
     font-family:sans-serif;
     font-size: 16px;
 
+    /* text formatting related styles */
     text-shadow: 2px 2px 4px rgba(10, 10, 10, 0.8);
     color: #b3d6ed;
 
+    /* added padding to have some space between the content inside each tile and the borders of each tile */
     padding: 10px;
 }
 
+/* section-container decided how these individual tiles be arranged, puttong them in a sort of 'container' */
 .section-container {
     display: flex;
     flex-wrap: wrap;
@@ -150,6 +162,7 @@ body {
     margin-top: 2%;
 }
 
+/* stying the title of the content inside the section tiles */
 .heading {
     margin-top: 3%;
     font-size: 20px;
@@ -158,18 +171,21 @@ body {
     color: #bfc9ca;
 }
 
+/* to style the recent testimonials being entered in the home page using javascript */
 #section-content {
     margin-top: 2px;
     text-decoration: none;
     font-style: italic;
 }
 
+/* main content inside the section tiles */
 .sum-content {
     margin-top: 2px;
     text-decoration: none;
     font-style: italic;
 }
 
+/* styling the header of the page */
 header {    
     position: relative;
     text-align: center;
@@ -187,6 +203,7 @@ header {
     box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.35);
 }
 
+/* styling the logo inside the header */
 header img {
     position: absolute;
     left: 10px;
@@ -197,6 +214,7 @@ header img {
     transition: all 0.3s ease;
 }
 
+/* making the logo glow when hovered or tapped on depending on the input methods used to operate the website */
 header img:hover {
     cursor: pointer;
     filter: drop-shadow(0 0 2px white)
@@ -204,6 +222,7 @@ header img:hover {
             drop-shadow(0 0 12px white);    
 }
 
+/* styling the footer of the page which contains the copyright text */
 footer {
     text-align: center;
     padding: 1.5rem;
@@ -212,6 +231,7 @@ footer {
     box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.35);
 }
 
+/* styling the page title contained inside the header along with the club logo */
 .title {
     font-size: 24pt;
     font-weight: bolder;
@@ -224,6 +244,7 @@ footer {
     padding-left: 70px;
 }
 
+/* styling the sub-heading included inside the header, only used in the testimonials page */
 .content {
     font-size: 25pt;
     font-weight: bold;
@@ -231,6 +252,8 @@ footer {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+/* styling a separate containers for the events page specifically, showing all the conducted events
+   in separate tiles similiar to the home page layout*/
 .events-container {
     display: flex;
     flex-wrap: wrap;
@@ -240,59 +263,32 @@ footer {
     margin-top: 5%;   
 }
 
+/* styling the individual event tiles */
 .event {
-    background: rgba(21, 67, 96, 0.75);; /* 0.5 opacity */
+    background: rgba(21, 67, 96, 0.75);
     
     /* Glass effect properties */
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(10px);
     
     /* Border and shadow */
-    
     border: 1px solid rgba(255, 255, 255, 0.2); /* subtle white border */
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6), 
                 0 6px 20px rgba(0, 0, 0, 0.6);
     
     /* Ensure content is above the blur */
     position: relative;
-    border-radius: 12px;
-    
+
+    border-radius: 12px;    
     padding: 1.5rem;
     width: 100%;
     max-width: 500px;
+
+    /* making sure all the effects happen smoothly */
     transition:  0.3s ease;
 }
 
-.video-lectures {
-    background: linear-gradient(135deg, rgba(111, 21, 229, 0.7), rgba(179, 86, 157, 0.9));
-
-    /* Glass effect properties */
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(10px);
-    
-    /* Border and shadow */
-    
-    border: 1px solid rgba(255, 255, 255, 0.2); /* subtle white border */
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6), 
-                0 6px 20px rgba(0, 0, 0, 0.6);
-    
-    /* Ensure content is above the blur */
-    position: relative;
-    border-radius: 12px;
-    
-    margin-top: 2%;
-    padding: 0 2rem;
-    width: 100%;
-    max-width: 500px;
-    transition:  0.3s ease;
-
-    margin-bottom: 3rem;
-    margin-left: 5%;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-/* Medium devices (tablets, 768px and up) */
+/* optimizing the styling for medium sized devices (tablets, 768px and up) */
 @media (min-width: 768px) {
     .container {
         justify-content: space-around;
@@ -317,7 +313,7 @@ footer {
     }
 }
 
-/* Large devices (desktops, 992px and up) */
+/* optimizing the styling for large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
     .container {
         width: 95%;

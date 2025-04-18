@@ -1,4 +1,6 @@
+// Letting the webpage to be loaded before running the script
 document.addEventListener('DOMContentLoaded', function() {
+
     // Sample testimonials data - you can replace this with real data
     const testimonials = JSON.parse(localStorage.getItem('testimonials')) || [
         {
@@ -21,10 +23,12 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     ];
 
+    // Storing new testimonials to local storage
     function saveTestimonials() {
         localStorage.setItem('testimonials', JSON.stringify(testimonials));
     }
 
+    // Declaring variables
     const testimonialsContainer = document.querySelector('.testimonials-container');
     const testimonialForm = document.getElementById('testimonial-form');
     const stars = document.querySelectorAll('.stars i');
@@ -110,7 +114,6 @@ document.addEventListener('DOMContentLoaded', function() {
             });
             ratingInput.value = 0;
             
-            // In a real app, you would save to a database here
             alert('Thank you for your testimonial!');
         }
     });
@@ -118,5 +121,5 @@ document.addEventListener('DOMContentLoaded', function() {
     // Initial display
     displayTestimonials();
 
-    testimonials.splice(0, 1);
+    testimonials.splice(0, 2);
 });

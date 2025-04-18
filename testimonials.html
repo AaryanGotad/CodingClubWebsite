@@ -1,15 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Testimonials</title>
-    <link rel = "stylesheet" href = "styles.css">
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="styles2.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+
+<!-- changed the background color for this page -->
+
 <body style="background: linear-gradient(135deg, #5528a0, #c166a0);">
-    
+
+    <!-- header includes page title and the coding club logo which can also be
+         used to go to the home page by clicking on it, in any page of the website -->
+    <header>
+        <img src="logo.png" alt="Logo" class="clickable-logo">
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const logo = document.querySelector('.clickable-logo');
+
+                if (logo) {
+                    logo.addEventListener('click', function () {
+                        window.location.href = 'index.html'
+                    });
+                }
+            });
+        </script>
+
+        <h1 class="title">Coding Club Testimonials</h1>
+        <p class="content">Hear what our members have to say</p>
+    </header>
+
+    <!-- navigation bar -->
     <div class="container" id="nav-menu">
         <div class="radio-wrapper">
             <div class="btn">
@@ -48,29 +73,12 @@
         </div>
     </div>
 
-    <header>
-        <img src="logo.png" alt="Logo" class="clickable-logo">
-        <script>
-            document.addEventListener('DOMContentLoaded', function() {
-                const logo = document.querySelector('.clickable-logo');
-
-                if(logo) {
-                    logo.addEventListener('click', function() {
-                        window.location.href = 'index.html'
-                    });
-                }
-            });
-        </script>
-
-        <h1 class = "title">Coding Club Testimonials</h1>
-        <p class="content">Hear what our members have to say</p>
-    </header>
-
     <main>
         <section class="testimonials-container">
             <!-- Testimonials will be added here by JavaScript -->
         </section>
 
+        <!-- form to add testimonials -->
         <section class="add-testimonial">
             <h2>Share Your Experience</h2>
             <form id="testimonial-form">
@@ -99,10 +107,13 @@
         </section>
     </main>
 
+    <!-- footer of the website containing copyright statements for the content of the website -->
     <footer>
         <p>© 2025 Indian Institute of Technology Guwahati Online Degree Program Coding Club. All rights reserved.</p>
     </footer>
 
+    <!-- JavaScript file to handle the storage and display of all the testimonials -->
     <script src="script.js"></script>
 </body>
+
 </html>

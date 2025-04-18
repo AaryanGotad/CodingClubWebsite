@@ -1,5 +1,6 @@
+// Letting the entire webpage to load before running the script
 document.addEventListener('DOMContentLoaded', function() {
-    const testimonialsSection = document.querySelector('#section-content'); // Target the testimonials paragraph
+    const testimonialsSection = document.querySelector('#section-content'); // Target the testimonials tile
     const testimonials = JSON.parse(localStorage.getItem('testimonials')) || [
         {
             name: "Alex Johnson",
@@ -22,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
     ];
 
     if (testimonials.length > 0) {
-        const recentTestimonials = testimonials.slice(0, 1); // Get 3 most recent
+        const recentTestimonials = testimonials.slice(0, 1); // Getting the most recent
         let testimonialsHTML = '';
 
         recentTestimonials.forEach(testimonial => {

@@ -6,13 +6,7 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-body {
-    background-image: url("background image.png");
-    background-size: cover;
-
-    z-index: 100;
-}
-
+/* styling the container storing all the individual testimonial tiles */
 .testimonials-container {
     display: flex;
     flex-wrap: wrap;
@@ -22,6 +16,7 @@ body {
     margin-bottom: 3rem;
 }
 
+/* styling the individual testimonial tiles */
 .testimonial-card {
     background: rgba(21, 67, 96, 0.75);
 
@@ -39,13 +34,17 @@ body {
     padding: 1.5rem;
     width: 95%;
     max-width: 95%;
+
+    /* making sure all the effects show smoothly */
     transition: transform 0.3s ease;
 }
 
+/* making a card pop out a bit when hovered on */
 .testimonial-card:hover {
     transform: translateY(5px);
 }
 
+/* styling the testimonials text */
 .testimonial-text {
     font-style: italic;
     margin-bottom: 1rem;
@@ -62,6 +61,7 @@ body {
     padding-right: 20px;
 }
 
+/* adding double quotes at the start and at the end of each testimonial message */
 .testimonial-text::before,
 .testimonial-text::after {
     content: '"';
@@ -71,6 +71,7 @@ body {
     position: absolute;
 }
 
+/* minor tweeks to the texts before and after a testimonial is printed on it */
 .testimonial-text::before {
     top: -15px;
     left: -10px;
@@ -81,6 +82,7 @@ body {
     right: -10px;
 }
 
+/* styling each individual values of the submitted form */
 .testimonial-author {
     display: flex;
     align-items: center;
@@ -101,6 +103,7 @@ body {
     color: #666;
 }
 
+/* styling the stars and adding hover effects on them */
 .stars {
     color: #ffc107;
     margin: 0.5rem 0;
@@ -112,6 +115,7 @@ body {
     margin-right: 0.2rem;
 }
 
+/* styling the background of the submit form area */
 .add-testimonial {
     background: rgba(21, 67, 96, 0.75);
 
@@ -136,11 +140,13 @@ body {
     color: #6e8efb;
 }
 
+/* styling and optimizing the animations of the submit form area */
 .form-group {
     transition: 0.3s ease;
     margin-bottom: 1.5rem;
 }
 
+/* styling the form input fields */
 input, textarea {
     width: 100%;
     padding: 0.8rem;
@@ -149,6 +155,7 @@ input, textarea {
     font-size: 1rem;
 }
 
+/* styling the input field and text area placeholders of the submit form */
 input::placeholder {
     color: whitesmoke;
 }
@@ -162,6 +169,7 @@ textarea::placeholder {
     color: whitesmoke;
 }
 
+/* styling the submit button */
 button {
     background: linear-gradient(135deg, #6e8efb, #a777e3);
     color: white;
@@ -174,26 +182,33 @@ button {
     width: 100%;
 }
 
+/* adding a hover effect to the submit button */
 button:hover {
     background: linear-gradient(135deg, #8ca0fc, #c090f0);
     opacity: 0.9;
 }
 
+/* adding glass effect on the input fields of the form */
 #name, #role, #message {
     background-color: rgba(128, 128, 128, 0.5);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
+
+    box-shadow: 0 4px 13px rgba(0, 0, 0, 0.35),
+                0 5px 18px rgba(0, 0, 0, 0.35);
 }
 
+/* adding a alight popping out animation to the submit form */
 .form-group:hover {
     transform: translate3d(0, 5px, 5px);
 }
-
+/* increasing the opacity of the shadow to individual input fields when hoverred on */
 #name:hover, #role:hover, #message:hover {
     box-shadow: 0 4px 13px rgba(0, 0, 0, 0.6),
                 0 5px 18px rgba(0, 0, 0, 0.6);
 }
 
+/* styling the footer of the page */
 footer {
     text-align: center;
     padding: 1.5rem;
@@ -201,7 +216,7 @@ footer {
     color: white;
 }
 
-/* Responsive Design */
+/* Responsive Design for smaller screens (mobile phones, tablets, etc.) */
 @media (max-width: 768px) {
     .testimonials-container {
         padding: 0 1rem;
@@ -212,7 +227,7 @@ footer {
     }
 }
 
-/* Medium devices (tablets, 768px and up) */
+/* optimizing for medium sized devices (tablets, 768px and up) */
 @media (min-width: 768px) {
     .testimonial-card {
         max-width: 80%;
@@ -223,7 +238,7 @@ footer {
     }
 }
 
-/* Large devices (desktops, 992px and up) */
+/* optimizing for large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
     .testimonial-card {
         max-width: 350px;
