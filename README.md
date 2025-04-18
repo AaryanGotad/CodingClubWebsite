@@ -31,7 +31,7 @@ Clone the repo:
 
 bash
 
-```git clone (https://github.com/aaryangotad/CodingClubWebsite.git)```
+```git clone https://github.com/aaryangotad/CodingClubWebsite.git```
 
 Open in browser:
 
